@@ -26,6 +26,16 @@ To install release candidates run `[sudo] gem install cocoapods --pre`
 ##### Enhancements
 
 * None.  
+* Allow deduplication to take effect even when the same pod is used with
+  different sets of subspecs across different platforms.  
+  This changes the general naming scheme scoped pod targets. They are
+  suffixed now on base of what makes them different among others for the
+  same root spec instead of being prefixed by the dependant target.
+  Pods are built by default in another scoping level of the build products
+  directory identified by their name to exclude name clashes among
+  dependencies.  
+  [Marius Rackwitz](https://github.com/mrackwitz)
+  [#4146](https://github.com/CocoaPods/CocoaPods/pull/4146)
 
 ##### Bug Fixes
 
