@@ -48,6 +48,12 @@ To install release candidates run `[sudo] gem install cocoapods --pre`
   [#4751](https://github.com/CocoaPods/CocoaPods/issues/4751)
 
 * Handle CoreData mapping models with recursive resource globs.  
+* Fix mixed integrations where static libraries are used along frameworks
+  from different target definitions in one Podfile.  
+  [Marius Rackwitz](https://github.com/mrackwitz)
+  [#4146](https://github.com/CocoaPods/CocoaPods/pull/4146)
+
+* Handle CoreData mapping models with recursive resource globs.
   [Eric Firestone](https://github.com/efirestone)
   [#4809](https://github.com/CocoaPods/CocoaPods/pull/4809)
 
