@@ -110,7 +110,7 @@ module Pod
       download_dependencies
       determine_dependency_product_types
       verify_no_duplicate_framework_names
-      verify_no_static_framework_transitive_dependencies
+      # verify_no_static_framework_transitive_dependencies
       verify_framework_usage
       generate_pods_project
       integrate_user_project if installation_options.integrate_targets?
